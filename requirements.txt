@@ -1,0 +1,6 @@
+# Python dependencies
+pandas
+playwright
+
+# System dependency (required for extension extraction)
+# 7-Zip must be installed and '7z' available in PATH 
