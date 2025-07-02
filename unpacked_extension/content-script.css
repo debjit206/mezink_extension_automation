@@ -1,0 +1,68 @@
+:root {
+  --primary-color: #500b75;
+}
+
+.mezink-global-cont {
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  z-index: 3000;
+}
+
+.mezink-toggle-button {
+  position: absolute;
+  top: 10%;
+  left: -138px;
+  background-color: #ffffff;
+  border: none;
+  height: 48px;
+  width: 140px;
+  border: 2px solid var(--primary-color);
+  border-radius: 24px 0px 0px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.mezink-button-logo {
+  width: 24px;
+  height: 24px;
+}
+
+.mezink-button-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mezink-button-expanded {
+  width: 50px;
+  left: -48px;
+}
+
+.mezink-button-expanded > span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.mezink-iframe-container {
+  overflow: hidden;
+  width: 0px;
+  height: 100vh;
+  transition: width 0.5s ease;
+}
+
+.mezink-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-left: 5px solid var(--primary-color);
+}
+
+.mezink-iframe-container.mezink-expanded {
+  width: 800px;
+}
