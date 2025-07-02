@@ -32,9 +32,7 @@ Run the script:
 ```bash
 python mezink_playwright.py
 ```
-- Select the Chrome profile where the Mezink extension is installed when prompted.
 - The script will process each profile URL, log results, and save a summary to `processing_results.json`.
 
 ## Notes
-- The script does **not** use or require `railway_api.py`.
 - Make sure your Chrome profiles and extension are set up before running. 
