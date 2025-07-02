@@ -100,8 +100,11 @@ class MezinkPlaywrightAutomator:
             
             playwright = await async_playwright().start()
             
-            # Get extension path - using absolute path
-            crx_path = Path(r"C:\Users\debji\Downloads\Mezink Code Files\Extension_automation\Mezink_Social_AI.crx")
+            # Get extension path - only use local file in script directory
+            crx_path = self.script_dir / "Mezink_Social_AI.crx"
+            if not crx_path.exists():
+                logger.error("Mezink_Social_AI.crx not found in script directory!")
+                return False
             unpacked_path = self.script_dir / "unpacked_extension"
             
             # Create unpacked extension directory if it doesn't exist
